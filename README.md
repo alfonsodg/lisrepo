@@ -48,7 +48,7 @@ imaging_heading -> Directorio Raiz
 
 ##Instalación
 
-###Copiar / Clonar el directorio actual (lisrepo)
+###Copiar / clonar el directorio /srv
 ```
 git clone https://alfonsodg@bitbucket.org/controlradiologico/lisrepo.git
 ```
@@ -92,15 +92,16 @@ Description = Imaging Service
 After = network.target
 
 [Service]
-WorkingDirectory = /srv/repo_lis
-ExecStart = /srv/repo_lis/server.py
+WorkingDirectory = /srv/lisrepo
+ExecStart = /srv/lisrepo/server.py
 
 [Install]
 WantedBy = multi-user.target
 ```
-Una vez creado el archivo activar el servicio al inicio
+Una vez creado el archivo activar el servicio de inmediato y al inicio
 ```
 systemctl start lis.service
+systemctl enable lis.service
 ```
 
 
