@@ -1,0 +1,12 @@
+#/etc/systemd/system/lis.service
+
+[Unit]
+Description = LIS Service
+After = network.target
+
+[Service]
+WorkingDirectory = /srv/lisrepo
+ExecStart = /srv/lisrepo/server.py
+
+[Install]
+WantedBy = multi-user.target

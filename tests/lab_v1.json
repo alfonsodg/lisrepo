@@ -1,0 +1,91 @@
+{
+  "resourceType": "Observation",
+  "id": "5284-lab",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2017-09-22T15:29:57.327+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>2005-07-05: Creat SerPl-mCnc = 1 mg/dL</div>"
+  },
+  "status": "final",
+  "category": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/observation-category",
+        "code": "laboratory",
+        "display": "Laboratorio"
+      }
+    ],
+    "text": "Laboratorio"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2160-0",
+        "display": "Creat SerPl-mCnc"
+      },
+      {
+        "system": "maestroDePrestaciones",
+        "id_kp": "5284",
+        "display": "CREATININA EN SANGRE"
+      }
+    ],
+    "text": "Creat SerPl-mCnc"
+  },
+  "subject": {
+    "reference": "Patient/142552",
+    "reference_alternate": "3738883-5",
+    "name": ""
+  },
+  "effectiveDateTime": "2005-07-05",
+  "valueQuantity": {
+    "value": 1.0,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "observation": ""
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0.2,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "high": {
+        "value": 0.6,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "meaning": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Rango Normal"
+          }
+        ],
+        "text": "Rango Normal"
+      }
+    }
+  ],
+  "requestDetail": {
+    "requestNumber": "77783",
+    "requestDatetime": "2017-01-01 21:00:00",
+    "requestReferrer": "2627727-3",
+    "providerId": "11111-8"
+  },
+  "reportDetail": {
+    "reportNumber": "77783",
+    "areaLaboratory": "1",
+    "equipmentId": "23",
+    "processDatetime": "2017-01-01 22:00:00",
+    "validationDatetime": "2017-01-01 23:00:00",
+    "reportSigner": "15260200-6",
+    "providerId": "11111-8"
+  }
+}
