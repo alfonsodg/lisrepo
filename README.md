@@ -291,3 +291,8 @@ Está contenido dentro del archivo **config.json**
       "log_file_base": "lisrepo.log"  --> Nombre base de log para rotar
     }
 ```
+
+
+##Licencia
+Este software es entregado bajo licencia GPL v3, excepto en las librerías que no sean compatibles con esta licencia.  Revisar el archivo **gplv3.md
+** para los detalles y alcances del mismo
