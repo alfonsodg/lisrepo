@@ -109,28 +109,39 @@ systemctl enable lis.service
 
 ###Método Post
 * /api/v1/register
->Inserta data json de atención (el formato ejemplo está contenido dentro de tests/lab_v1.json o revisar titulo **Formato JSON para INSERT (POST)**)
+
+    Inserta data json de atención (el formato ejemplo está contenido dentro de tests/lab_v1.json o revisar titulo **Formato JSON para INSERT (POST)**)
 
 ###Método Get
+
 * /api/v1/work_order/(CODIGO)
->Busca y devuelve resultado por código de orden de laboratorio
+
+    Busca y devuelve resultado por código de orden de laboratorio
 
 * /api/v1/patient/(DOC_ID)
->Busca y devuelve resultados por DOC_ID
+
+    Busca y devuelve resultados por DOC_ID
 
 * /api/v1/patient_alternate/(DOC_ID)
->Busca y devuelve resultados por código BDUP o algún código definido en subject.reference_alternate del archivo json original
+
+    Busca y devuelve resultados por código BDUP o algún código definido en subject.reference_alternate del archivo json original
 
 * /api/v1/provider/(DOC_ID)
->Busca y devuelve resultados por DOC_ID de proveedor
+
+    Busca y devuelve resultados por DOC_ID de proveedor
 
 ###Respuestas:
+
 * {'status':'Error'}
->Error en los parámetros de consulta del webservice, revisar los mismos
+
+    Error en los parámetros de consulta del webservice, revisar los mismos
+
 * {'status': 'Ok'}
->Dato recibido y guardado (solo para POST)
+    Dato recibido y guardado (solo para POST)
+
 * [{ {metadata} }]
->Conjunto (lista) de datos resultantes de la consulta y cuya estructura es igual al formato de insert json más {'_id':CODIGO UNICO}
+
+    Conjunto (lista) de datos resultantes de la consulta y cuya estructura es igual al formato de insert json más {'_id':CODIGO UNICO}
 
 
 ##Seguridad
