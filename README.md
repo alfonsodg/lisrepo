@@ -83,7 +83,7 @@ http://localhost:8888/** (cambiar el localhost por el ip correspondiente)
 
 
 ##Inicio Automático
-Se ha incluído un servicio en extras/imaging.service
+Se ha incluído un servicio en extras/lis.service
 
     /etc/systemd/system/lis.service   
 ```
