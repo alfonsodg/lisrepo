@@ -137,6 +137,7 @@ systemctl enable lis.service
     Error en los parámetros de consulta del webservice, revisar los mismos
 
 * {'status': 'Ok'}
+
     Dato recibido y guardado (solo para POST)
 
 * [{ {metadata} }]
